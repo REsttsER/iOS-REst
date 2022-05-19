@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6709C2D02835D2ED0008BE06 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6709C2CF2835D2ED0008BE06 /* SnapKit */; };
 		67DA364E2834CFDF00B2CAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA364D2834CFDF00B2CAF6 /* AppDelegate.swift */; };
 		67DA36502834CFDF00B2CAF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA364F2834CFDF00B2CAF6 /* SceneDelegate.swift */; };
 		67DA36552834CFDF00B2CAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DA36532834CFDF00B2CAF6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		67DA36652834CFE000B2CAF6 /* REstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA36642834CFE000B2CAF6 /* REstTests.swift */; };
 		67DA366F2834CFE000B2CAF6 /* REstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA366E2834CFE000B2CAF6 /* REstUITests.swift */; };
 		67DA36712834CFE000B2CAF6 /* REstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA36702834CFE000B2CAF6 /* REstUITestsLaunchTests.swift */; };
+		67DA368E2834E05600B2CAF6 /* REstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA368D2834E05600B2CAF6 /* REstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		67DA366A2834CFE000B2CAF6 /* REstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = REstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DA366E2834CFE000B2CAF6 /* REstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstUITests.swift; sourceTree = "<group>"; };
 		67DA36702834CFE000B2CAF6 /* REstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67DA368D2834E05600B2CAF6 /* REstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6709C2D02835D2ED0008BE06 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,7 @@
 		67DA364C2834CFDF00B2CAF6 /* REst */ = {
 			isa = PBXGroup;
 			children = (
+				67DA365B2834CFE000B2CAF6 /* Info.plist */,
 				67DA367D2834D25D00B2CAF6 /* Application */,
 				67DA367E2834D27F00B2CAF6 /* Presentation */,
 				67DA367F2834D2BD00B2CAF6 /* Domain */,
@@ -137,6 +142,7 @@
 		67DA367E2834D27F00B2CAF6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				67DA36872834D8B900B2CAF6 /* REstScene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -174,7 +180,6 @@
 			children = (
 				67DA36852834D3CE00B2CAF6 /* Asset */,
 				67DA36842834D3B500B2CAF6 /* Storyboard */,
-				67DA365B2834CFE000B2CAF6 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +201,38 @@
 			path = Asset;
 			sourceTree = "<group>";
 		};
+		67DA36872834D8B900B2CAF6 /* REstScene */ = {
+			isa = PBXGroup;
+			children = (
+				67DA36882834D98900B2CAF6 /* View */,
+				67DA368A2834D9A000B2CAF6 /* ViewController */,
+				67DA36892834D99300B2CAF6 /* ViewModel */,
+			);
+			path = REstScene;
+			sourceTree = "<group>";
+		};
+		67DA36882834D98900B2CAF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67DA36892834D99300B2CAF6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67DA368A2834D9A000B2CAF6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67DA368D2834E05600B2CAF6 /* REstViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +249,9 @@
 			dependencies = (
 			);
 			name = REst;
+			packageProductDependencies = (
+				6709C2CF2835D2ED0008BE06 /* SnapKit */,
+			);
 			productName = REst;
 			productReference = 67DA364A2834CFDF00B2CAF6 /* REst.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +324,10 @@
 				Base,
 			);
 			mainGroup = 67DA36412834CFDF00B2CAF6;
+			packageReferences = (
+				6709C2CD2835D1F20008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6709C2CE2835D2ED0008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 67DA364B2834CFDF00B2CAF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DA364E2834CFDF00B2CAF6 /* AppDelegate.swift in Sources */,
+				67DA368E2834E05600B2CAF6 /* REstViewController.swift in Sources */,
 				67DA36502834CFDF00B2CAF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +715,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6709C2CD2835D1F20008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6709C2CE2835D2ED0008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6709C2CF2835D2ED0008BE06 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6709C2CE2835D2ED0008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67DA36422834CFDF00B2CAF6 /* Project object */;
 }
