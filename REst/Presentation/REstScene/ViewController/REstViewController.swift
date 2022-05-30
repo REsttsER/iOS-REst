@@ -28,6 +28,7 @@ class REstViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .black
         button.alpha = 0.4
+        button.layer.cornerRadius = 50
         button.clipsToBounds = true
         return button
     }()
@@ -39,6 +40,7 @@ class REstViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .black
         button.alpha = 0.4
+        button.layer.cornerRadius = 50
         button.clipsToBounds = true
         return button
     }()
@@ -50,6 +52,7 @@ class REstViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .black
         button.alpha = 0.4
+        button.layer.cornerRadius = 50
         button.clipsToBounds = true
         return button
     }()
@@ -64,21 +67,24 @@ private extension REstViewController {
     func configureUI() {
         self.view.addSubview(self.mapView)
         self.mapView.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(150)
-            make.right.left.bottom.equalToSuperview()
+            make.top.right.left.bottom.equalToSuperview()
         }
-        
+        self.view.addSubview(self.restButton)
+        self.restButton.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(20)
+            make.width.height.equalTo(100)
+            make.bottom.equalTo(self.view.snp.bottom).offset(-100)
+        }
         self.view.addSubview(self.jogButton)
         self.jogButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.width.height.equalTo(120)
+            make.width.height.equalTo(100)
             make.bottom.equalTo(self.view.snp.bottom).offset(-100)
         }
         self.view.addSubview(self.runButton)
         self.runButton.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.width.height.equalTo(120)
+            make.right.equalToSuperview().offset(-20)
+            make.width.height.equalTo(100)
             make.bottom.equalTo(self.view.snp.bottom).offset(-100)
         }
     }
