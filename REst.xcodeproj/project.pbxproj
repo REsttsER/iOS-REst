@@ -17,6 +17,16 @@
 		67DA366F2834CFE000B2CAF6 /* REstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA366E2834CFE000B2CAF6 /* REstUITests.swift */; };
 		67DA36712834CFE000B2CAF6 /* REstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA36702834CFE000B2CAF6 /* REstUITestsLaunchTests.swift */; };
 		67DA368E2834E05600B2CAF6 /* REstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA368D2834E05600B2CAF6 /* REstViewController.swift */; };
+		67E137B42852CD4600A564EC /* REstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137B32852CD4600A564EC /* REstViewModel.swift */; };
+		67E137B72852CEDF00A564EC /* REstUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137B62852CEDF00A564EC /* REstUseCase.swift */; };
+		67E137BB2852D0C100A564EC /* LocationAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137BA2852D0C100A564EC /* LocationAuthorizationStatus.swift */; };
+		67E137BE2852D24E00A564EC /* DefaultREstUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137BD2852D24E00A564EC /* DefaultREstUseCase.swift */; };
+		67E137C12852FFA900A564EC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 67E137C02852FFA900A564EC /* RxCocoa */; };
+		67E137C32852FFA900A564EC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 67E137C22852FFA900A564EC /* RxRelay */; };
+		67E137C52852FFA900A564EC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67E137C42852FFA900A564EC /* RxSwift */; };
+		67E137C92853011900A564EC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137C82853011900A564EC /* LocationService.swift */; };
+		67E137CD28531ECF00A564EC /* REstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137CC28531ECF00A564EC /* REstCoordinator.swift */; };
+		67E137D42853200700A564EC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E137D32853200700A564EC /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,13 @@
 		67DA366E2834CFE000B2CAF6 /* REstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstUITests.swift; sourceTree = "<group>"; };
 		67DA36702834CFE000B2CAF6 /* REstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67DA368D2834E05600B2CAF6 /* REstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstViewController.swift; sourceTree = "<group>"; };
+		67E137B32852CD4600A564EC /* REstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstViewModel.swift; sourceTree = "<group>"; };
+		67E137B62852CEDF00A564EC /* REstUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstUseCase.swift; sourceTree = "<group>"; };
+		67E137BA2852D0C100A564EC /* LocationAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAuthorizationStatus.swift; sourceTree = "<group>"; };
+		67E137BD2852D24E00A564EC /* DefaultREstUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultREstUseCase.swift; sourceTree = "<group>"; };
+		67E137C82853011900A564EC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		67E137CC28531ECF00A564EC /* REstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REstCoordinator.swift; sourceTree = "<group>"; };
+		67E137D32853200700A564EC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E137C32852FFA900A564EC /* RxRelay in Frameworks */,
+				67E137C12852FFA900A564EC /* RxCocoa in Frameworks */,
+				67E137C52852FFA900A564EC /* RxSwift in Frameworks */,
 				6709C2D02835D2ED0008BE06 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +129,7 @@
 				67DA36812834D31400B2CAF6 /* Infrastructure */,
 				67DA36822834D33D00B2CAF6 /* Common */,
 				67DA36832834D34400B2CAF6 /* Resources */,
+				67E137B82852D04A00A564EC /* Util */,
 			);
 			path = REst;
 			sourceTree = "<group>";
@@ -142,6 +163,7 @@
 		67DA367E2834D27F00B2CAF6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				67E137CE28531F4200A564EC /* Common */,
 				67DA36872834D8B900B2CAF6 /* REstScene */,
 			);
 			path = Presentation;
@@ -150,6 +172,7 @@
 		67DA367F2834D2BD00B2CAF6 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				67E137B52852CE2400A564EC /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -204,6 +227,7 @@
 		67DA36872834D8B900B2CAF6 /* REstScene */ = {
 			isa = PBXGroup;
 			children = (
+				67E137CA28531E9000A564EC /* Coordinator */,
 				67DA36882834D98900B2CAF6 /* View */,
 				67DA368A2834D9A000B2CAF6 /* ViewController */,
 				67DA36892834D99300B2CAF6 /* ViewModel */,
@@ -221,6 +245,7 @@
 		67DA36892834D99300B2CAF6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				67E137B32852CD4600A564EC /* REstViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +256,96 @@
 				67DA368D2834E05600B2CAF6 /* REstViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		67E137B52852CE2400A564EC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				67E137BD2852D24E00A564EC /* DefaultREstUseCase.swift */,
+				67E137BC2852D1B900A564EC /* Protocol */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		67E137B82852D04A00A564EC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				67E137C6285300F300A564EC /* Service */,
+				67E137B92852D05C00A564EC /* Constant */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		67E137B92852D05C00A564EC /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				67E137BA2852D0C100A564EC /* LocationAuthorizationStatus.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		67E137BC2852D1B900A564EC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67E137B62852CEDF00A564EC /* REstUseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		67E137C6285300F300A564EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				67E137C72853010600A564EC /* Protocol */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		67E137C72853010600A564EC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67E137C82853011900A564EC /* LocationService.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		67E137CA28531E9000A564EC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				67E137CB28531EAF00A564EC /* Protocol */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		67E137CB28531EAF00A564EC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67E137CC28531ECF00A564EC /* REstCoordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		67E137CE28531F4200A564EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67E137CF28531F9500A564EC /* Coordinator */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		67E137CF28531F9500A564EC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				67E137D028531FB500A564EC /* Protocol */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		67E137D028531FB500A564EC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67E137D32853200700A564EC /* Coordinator.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +366,9 @@
 			name = REst;
 			packageProductDependencies = (
 				6709C2CF2835D2ED0008BE06 /* SnapKit */,
+				67E137C02852FFA900A564EC /* RxCocoa */,
+				67E137C22852FFA900A564EC /* RxRelay */,
+				67E137C42852FFA900A564EC /* RxSwift */,
 			);
 			productName = REst;
 			productReference = 67DA364A2834CFDF00B2CAF6 /* REst.app */;
@@ -327,6 +445,7 @@
 			packageReferences = (
 				6709C2CD2835D1F20008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				6709C2CE2835D2ED0008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				67E137BF2852FFA900A564EC /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 67DA364B2834CFDF00B2CAF6 /* Products */;
 			projectDirPath = "";
@@ -371,8 +490,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E137B72852CEDF00A564EC /* REstUseCase.swift in Sources */,
+				67E137B42852CD4600A564EC /* REstViewModel.swift in Sources */,
+				67E137D42853200700A564EC /* Coordinator.swift in Sources */,
+				67E137CD28531ECF00A564EC /* REstCoordinator.swift in Sources */,
+				67E137C92853011900A564EC /* LocationService.swift in Sources */,
 				67DA364E2834CFDF00B2CAF6 /* AppDelegate.swift in Sources */,
+				67E137BE2852D24E00A564EC /* DefaultREstUseCase.swift in Sources */,
 				67DA368E2834E05600B2CAF6 /* REstViewController.swift in Sources */,
+				67E137BB2852D0C100A564EC /* LocationAuthorizationStatus.swift in Sources */,
 				67DA36502834CFDF00B2CAF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,6 +859,14 @@
 				kind = branch;
 			};
 		};
+		67E137BF2852FFA900A564EC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -740,6 +874,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6709C2CE2835D2ED0008BE06 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		67E137C02852FFA900A564EC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E137BF2852FFA900A564EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		67E137C22852FFA900A564EC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E137BF2852FFA900A564EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		67E137C42852FFA900A564EC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E137BF2852FFA900A564EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
