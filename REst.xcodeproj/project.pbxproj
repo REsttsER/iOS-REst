@@ -121,7 +121,6 @@
 		67DA364C2834CFDF00B2CAF6 /* REst */ = {
 			isa = PBXGroup;
 			children = (
-				67DA365B2834CFE000B2CAF6 /* Info.plist */,
 				67DA367D2834D25D00B2CAF6 /* Application */,
 				67DA367E2834D27F00B2CAF6 /* Presentation */,
 				67DA367F2834D2BD00B2CAF6 /* Domain */,
@@ -201,6 +200,7 @@
 		67DA36832834D34400B2CAF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				67DA365B2834CFE000B2CAF6 /* Info.plist */,
 				67DA36852834D3CE00B2CAF6 /* Asset */,
 				67DA36842834D3B500B2CAF6 /* Storyboard */,
 			);
