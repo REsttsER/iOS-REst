@@ -97,8 +97,10 @@ private extension REstViewController {
     
     func bindViewModel() {
         let output = self.viewModel?.transform(
-            input: REstViewModel.Input(viewDidLoadEvent: Observable.just(()).asObservable(),
-                                       startButtonDidTapEvent: self.restButton.rx.tap.asObservable()),
+            input: REstViewModel.Input(
+                viewDidLoadEvent: Observable.just(()).asObservable(),
+                startButtonDidTapEvent: self.restButton.rx.tap.asObservable()
+            ),
             disposeBag: self.disposeBag)
         
         output?.authorizationAlertShouldShow
