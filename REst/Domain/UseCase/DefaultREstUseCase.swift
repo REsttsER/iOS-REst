@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import RxSwift
 
-final class DefaultREstUserCase: REstUseCase {
+final class DefaultREstUseCase: REstUseCase {
     var authorizationStatus = BehaviorSubject<LocationAuthorizationStatus?>(value: nil)
     var userLocation = PublishSubject<CLLocation>()
     private let locationService: LocationService
