@@ -11,10 +11,11 @@ import RxRelay
 import RxSwift
 
 final class REstViewModel {
-    //weak var coordinator: REstCoordinator?
+    weak var coordinator: REstCoordinator?
     private let restUseCase: REstUseCase
     
-    init(restUseCase: REstUseCase) {
+    init(coordinator: REstCoordinator, restUseCase: REstUseCase) {
+        self.coordinator = coordinator
         self.restUseCase = restUseCase
     }
     

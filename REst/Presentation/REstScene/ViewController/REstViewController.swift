@@ -15,7 +15,7 @@ import RxCocoa
 
 class REstViewController: UIViewController {
     var disposeBag = DisposeBag()
-    var viewModel = REstViewModel(restUseCase: DefaultREstUseCase(locationService: DefaultLocationService()))
+    var viewModel: REstViewModel?
     
     private lazy var mapView: MKMapView = {
         let map = MKMapView()
@@ -96,21 +96,21 @@ private extension REstViewController {
     }
     
     func bindViewModel() {
-        let output = self.viewModel.transform(
+        let output = self.viewModel?.transform(
             input: REstViewModel.Input(
                 viewDidLoadEvent: Observable.just(()).asObservable(),
                 startButtonDidTapEvent: self.restButton.rx.tap.asObservable()
             ),
             disposeBag: self.disposeBag)
         
-        output.authorizationAlertShouldShow
+        output?.authorizationAlertShouldShow
             .asDriver(onErrorJustReturn: false)
             .drive(onNext: { [weak self] shouldShowAlert in
                 if shouldShowAlert { self?.setAuthAlertAction() }
             })
             .disposed(by: disposeBag)
         
-        output.currentUserLocation
+        output?.currentUserLocation
             .asDriver(onErrorJustReturn: self.mapView.userLocation.coordinate)
             .drive(onNext: { [weak self] userLocation in
                 self?.updateCurrentLocation(latitude: userLocation.latitude, longtitue: userLocation.longitude, delta: 0.005)

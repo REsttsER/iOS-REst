@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol flow: Coordinator {
+protocol REstCoordinator: Coordinator {
 
 }
