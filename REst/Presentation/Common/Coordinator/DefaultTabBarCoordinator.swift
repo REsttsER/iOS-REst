@@ -52,7 +52,7 @@ final class DefaultTabBarCoordinator: NSObject, TabBarCoordinator {
     }
     
     private func configureTabBarItem(of page: TabBarPage) -> UITabBarItem {
-        return UITabBarItem(title: nil, image: UIImage(named: page.tabIconName()), tag: page.pageOrderNumber())
+        return UITabBarItem(title: page.tabName(), image: UIImage(systemName: page.tabIconName()), tag: page.pageOrderNumber())
     }
     
     private func createTabNavigationController(of page: TabBarPage) -> UINavigationController {
@@ -71,8 +71,10 @@ final class DefaultTabBarCoordinator: NSObject, TabBarCoordinator {
             self.childCoordinators.append(restCoordinator)
             restCoordinator.start()
         case .active:
-            break
-            
+            let activeCoordinator = DefaultActiveCoordinator(tabNavigationController)
+            activeCoordinator.finishDelegate = self
+            self.childCoordinators.append(activeCoordinator)
+            activeCoordinator.start()
         }
     }
 }

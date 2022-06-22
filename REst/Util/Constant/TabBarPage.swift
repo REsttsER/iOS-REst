@@ -25,7 +25,17 @@ enum TabBarPage: String, CaseIterable {
         }
     }
     
+    func tabName() -> String {
+        switch self {
+        case .REst: return "REst"
+        case .active: return "Active"
+        }
+    }
+    
     func tabIconName() -> String {
-        return self.rawValue
+        switch self {
+        case .REst: return "figure.walk"
+        case .active: return "chart.bar.doc.horizontal"
+        }
     }
 }
