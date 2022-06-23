@@ -10,13 +10,13 @@ import UIKit
 final class DefaultActiveCoordinator: ActiveCoordinator {
     weak var finishDelegate: CoordinatorFinishDelegate?
     var navigationController: UINavigationController
-    var activeViewController: ActiveViewController
+    var activeViewController: ActiveListViewController
     var childCoordinators: [Coordinator] = []
     var type: CoordinatorType = .active
     
     required init(_ navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.activeViewController = ActiveViewController()
+        self.activeViewController = ActiveListViewController()
     }
     
     func start() {

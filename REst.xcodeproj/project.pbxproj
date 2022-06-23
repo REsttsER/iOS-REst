@@ -16,7 +16,7 @@
 		6729E5A02860420500585BC4 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E59F2860420500585BC4 /* CoordinatorType.swift */; };
 		6729E5A2286058E700585BC4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5A1286058E700585BC4 /* AppCoordinator.swift */; };
 		6729E5A62860598700585BC4 /* DefaultAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5A52860598600585BC4 /* DefaultAppCoordinator.swift */; };
-		6729E5AA28605CF200585BC4 /* ActiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5A928605CF200585BC4 /* ActiveViewController.swift */; };
+		6729E5AA28605CF200585BC4 /* ActiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5A928605CF200585BC4 /* ActiveListViewController.swift */; };
 		6729E5AD28605E0A00585BC4 /* ActiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5AC28605E0A00585BC4 /* ActiveViewModel.swift */; };
 		6729E5B228613E1A00585BC4 /* ActiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5B128613E1A00585BC4 /* ActiveTableViewCell.swift */; };
 		6729E5B62861B54D00585BC4 /* ActiveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5B52861B54D00585BC4 /* ActiveCoordinator.swift */; };
@@ -25,6 +25,7 @@
 		6729E5BF2862919900585BC4 /* ActiveUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5BE2862919900585BC4 /* ActiveUserCase.swift */; };
 		6729E5C2286296B600585BC4 /* DefaultActiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5C1286296B600585BC4 /* DefaultActiveRepository.swift */; };
 		6729E5C5286299B100585BC4 /* ActiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5C4286299B100585BC4 /* ActiveRepository.swift */; };
+		6729E5C82863E39C00585BC4 /* Active.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6729E5C72863E39C00585BC4 /* Active.swift */; };
 		674F40D62856B91200006E3E /* DefaultLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674F40D52856B91200006E3E /* DefaultLocationService.swift */; };
 		67DA364E2834CFDF00B2CAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA364D2834CFDF00B2CAF6 /* AppDelegate.swift */; };
 		67DA36502834CFDF00B2CAF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA364F2834CFDF00B2CAF6 /* SceneDelegate.swift */; };
@@ -73,7 +74,7 @@
 		6729E59F2860420500585BC4 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		6729E5A1286058E700585BC4 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		6729E5A52860598600585BC4 /* DefaultAppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAppCoordinator.swift; sourceTree = "<group>"; };
-		6729E5A928605CF200585BC4 /* ActiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveViewController.swift; sourceTree = "<group>"; };
+		6729E5A928605CF200585BC4 /* ActiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveListViewController.swift; sourceTree = "<group>"; };
 		6729E5AC28605E0A00585BC4 /* ActiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveViewModel.swift; sourceTree = "<group>"; };
 		6729E5B128613E1A00585BC4 /* ActiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTableViewCell.swift; sourceTree = "<group>"; };
 		6729E5B52861B54D00585BC4 /* ActiveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCoordinator.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		6729E5BE2862919900585BC4 /* ActiveUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveUserCase.swift; sourceTree = "<group>"; };
 		6729E5C1286296B600585BC4 /* DefaultActiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultActiveRepository.swift; sourceTree = "<group>"; };
 		6729E5C4286299B100585BC4 /* ActiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveRepository.swift; sourceTree = "<group>"; };
+		6729E5C72863E39C00585BC4 /* Active.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Active.swift; sourceTree = "<group>"; };
 		674F40D52856B91200006E3E /* DefaultLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLocationService.swift; sourceTree = "<group>"; };
 		67DA364A2834CFDF00B2CAF6 /* REst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DA364D2834CFDF00B2CAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,12 +136,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6729E59A2860257900585BC4 /* Delegate */ = {
+		6729E59A2860257900585BC4 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				6729E59B286025B900585BC4 /* CoordinatorFinishDelegate.swift */,
 			);
-			path = Delegate;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		6729E5A728605C8D00585BC4 /* ActiveScene */ = {
@@ -156,7 +158,7 @@
 		6729E5A828605CD600585BC4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6729E5A928605CF200585BC4 /* ActiveViewController.swift */,
+				6729E5A928605CF200585BC4 /* ActiveListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -181,24 +183,24 @@
 			isa = PBXGroup;
 			children = (
 				6729E5B72861B56900585BC4 /* DefaultActiveCoordinator.swift */,
-				6729E5B42861B52D00585BC4 /* Protocol */,
+				6729E5B42861B52D00585BC4 /* Protocols */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		6729E5B42861B52D00585BC4 /* Protocol */ = {
+		6729E5B42861B52D00585BC4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				6729E5B52861B54D00585BC4 /* ActiveCoordinator.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6729E5B92862912C00585BC4 /* REst */ = {
 			isa = PBXGroup;
 			children = (
 				67E137BD2852D24E00A564EC /* DefaultREstUseCase.swift */,
-				67E137BC2852D1B900A564EC /* Protocol */,
+				67E137BC2852D1B900A564EC /* Protocols */,
 			);
 			path = REst;
 			sourceTree = "<group>";
@@ -207,34 +209,42 @@
 			isa = PBXGroup;
 			children = (
 				6729E5BB2862917300585BC4 /* DefaultActiveUseCase.swift */,
-				6729E5BD2862917800585BC4 /* Protocol */,
+				6729E5BD2862917800585BC4 /* Protocols */,
 			);
 			path = Active;
 			sourceTree = "<group>";
 		};
-		6729E5BD2862917800585BC4 /* Protocol */ = {
+		6729E5BD2862917800585BC4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				6729E5BE2862919900585BC4 /* ActiveUserCase.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		6729E5C02862969600585BC4 /* Repository */ = {
+		6729E5C02862969600585BC4 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				6729E5C1286296B600585BC4 /* DefaultActiveRepository.swift */,
-				6729E5C3286296BD00585BC4 /* Protocol */,
+				6729E5C3286296BD00585BC4 /* Protocols */,
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
-		6729E5C3286296BD00585BC4 /* Protocol */ = {
+		6729E5C3286296BD00585BC4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				6729E5C4286299B100585BC4 /* ActiveRepository.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6729E5C62863E26A00585BC4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6729E5C72863E39C00585BC4 /* Active.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		67DA36412834CFDF00B2CAF6 = {
@@ -268,7 +278,7 @@
 				67DA36812834D31400B2CAF6 /* Infrastructure */,
 				67DA36822834D33D00B2CAF6 /* Common */,
 				67DA36832834D34400B2CAF6 /* Resources */,
-				67E137B82852D04A00A564EC /* Util */,
+				67E137B82852D04A00A564EC /* Utils */,
 			);
 			path = REst;
 			sourceTree = "<group>";
@@ -312,7 +322,8 @@
 		67DA367F2834D2BD00B2CAF6 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				67E137B52852CE2400A564EC /* UseCase */,
+				6729E5C62863E26A00585BC4 /* Entities */,
+				67E137B52852CE2400A564EC /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -320,7 +331,7 @@
 		67DA36802834D2C900B2CAF6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				6729E5C02862969600585BC4 /* Repository */,
+				6729E5C02862969600585BC4 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -342,27 +353,27 @@
 		67DA36832834D34400B2CAF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				67DA36852834D3CE00B2CAF6 /* Asset */,
-				67DA36842834D3B500B2CAF6 /* Storyboard */,
+				67DA36852834D3CE00B2CAF6 /* Assets */,
+				67DA36842834D3B500B2CAF6 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		67DA36842834D3B500B2CAF6 /* Storyboard */ = {
+		67DA36842834D3B500B2CAF6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				67DA36532834CFDF00B2CAF6 /* Main.storyboard */,
 				67DA36582834CFE000B2CAF6 /* LaunchScreen.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		67DA36852834D3CE00B2CAF6 /* Asset */ = {
+		67DA36852834D3CE00B2CAF6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				67DA36562834CFE000B2CAF6 /* Assets.xcassets */,
 			);
-			path = Asset;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		67DA36872834D8B900B2CAF6 /* REstScene */ = {
@@ -399,74 +410,74 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		67E137B52852CE2400A564EC /* UseCase */ = {
+		67E137B52852CE2400A564EC /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 				6729E5B92862912C00585BC4 /* REst */,
 				6729E5BA2862913800585BC4 /* Active */,
 			);
-			path = UseCase;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
-		67E137B82852D04A00A564EC /* Util */ = {
+		67E137B82852D04A00A564EC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				67E137C6285300F300A564EC /* Service */,
-				67E137B92852D05C00A564EC /* Constant */,
+				67E137C6285300F300A564EC /* Services */,
+				67E137B92852D05C00A564EC /* Constants */,
 			);
-			path = Util;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		67E137B92852D05C00A564EC /* Constant */ = {
+		67E137B92852D05C00A564EC /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				67E137BA2852D0C100A564EC /* LocationAuthorizationStatus.swift */,
 				6729E5972860201A00585BC4 /* TabBarPage.swift */,
 				6729E59F2860420500585BC4 /* CoordinatorType.swift */,
 			);
-			path = Constant;
+			path = Constants;
 			sourceTree = "<group>";
 		};
-		67E137BC2852D1B900A564EC /* Protocol */ = {
+		67E137BC2852D1B900A564EC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				67E137B62852CEDF00A564EC /* REstUseCase.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		67E137C6285300F300A564EC /* Service */ = {
+		67E137C6285300F300A564EC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				67E137C72853010600A564EC /* Protocol */,
 				674F40D52856B91200006E3E /* DefaultLocationService.swift */,
+				67E137C72853010600A564EC /* Protocols */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		67E137C72853010600A564EC /* Protocol */ = {
+		67E137C72853010600A564EC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				67E137C82853011900A564EC /* LocationService.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		67E137CA28531E9000A564EC /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				6729E59D2860316900585BC4 /* DefaultREstCoordinator.swift */,
-				67E137CB28531EAF00A564EC /* Protocol */,
+				67E137CB28531EAF00A564EC /* Protocols */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		67E137CB28531EAF00A564EC /* Protocol */ = {
+		67E137CB28531EAF00A564EC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				67E137CC28531ECF00A564EC /* REstCoordinator.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		67E137CE28531F4200A564EC /* Common */ = {
@@ -482,20 +493,20 @@
 			children = (
 				6729E5A52860598600585BC4 /* DefaultAppCoordinator.swift */,
 				6729E59328601CD500585BC4 /* DefaultTabBarCoordinator.swift */,
-				67E137D028531FB500A564EC /* Protocol */,
-				6729E59A2860257900585BC4 /* Delegate */,
+				67E137D028531FB500A564EC /* Protocols */,
+				6729E59A2860257900585BC4 /* Delegates */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		67E137D028531FB500A564EC /* Protocol */ = {
+		67E137D028531FB500A564EC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				67E137D32853200700A564EC /* Coordinator.swift */,
 				6729E5A1286058E700585BC4 /* AppCoordinator.swift */,
 				6729E59528601D9700585BC4 /* TabBarCoordinator.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,6 +660,7 @@
 				67E137B42852CD4600A564EC /* REstViewModel.swift in Sources */,
 				67E137D42853200700A564EC /* Coordinator.swift in Sources */,
 				67E137CD28531ECF00A564EC /* REstCoordinator.swift in Sources */,
+				6729E5C82863E39C00585BC4 /* Active.swift in Sources */,
 				6729E59628601D9700585BC4 /* TabBarCoordinator.swift in Sources */,
 				6729E59E2860316900585BC4 /* DefaultREstCoordinator.swift in Sources */,
 				6729E5B62861B54D00585BC4 /* ActiveCoordinator.swift in Sources */,
@@ -660,7 +672,7 @@
 				6729E5A62860598700585BC4 /* DefaultAppCoordinator.swift in Sources */,
 				6729E5B228613E1A00585BC4 /* ActiveTableViewCell.swift in Sources */,
 				67E137BE2852D24E00A564EC /* DefaultREstUseCase.swift in Sources */,
-				6729E5AA28605CF200585BC4 /* ActiveViewController.swift in Sources */,
+				6729E5AA28605CF200585BC4 /* ActiveListViewController.swift in Sources */,
 				67DA368E2834E05600B2CAF6 /* REstViewController.swift in Sources */,
 				6729E5BC2862917300585BC4 /* DefaultActiveUseCase.swift in Sources */,
 				6729E5C2286296B600585BC4 /* DefaultActiveRepository.swift in Sources */,
