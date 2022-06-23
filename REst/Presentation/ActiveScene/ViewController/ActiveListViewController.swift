@@ -33,6 +33,8 @@ final class ActiveListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+        bindViewModel()
     }
 }
 
